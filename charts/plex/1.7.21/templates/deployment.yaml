@@ -1,4 +1,3 @@
-{{ include "common.storage.hostPathValidate" .Values }}
 {{ include "common.deployment.common_config" . | nindent 0 }}
 spec: {{ include "common.deployment.common_spec" . | nindent 2 }}
   template: {{ include "common.deployment.pod.metadata" . | nindent 4 }}
